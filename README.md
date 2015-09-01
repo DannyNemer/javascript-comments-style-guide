@@ -165,7 +165,13 @@ The very early beginnings of a JavaScript style guide.
 
 - [2.10](#2.10) <a name='2.10'></a> Reference function parameters names in the function's description.
 - [2.11](#2.11) <a name='2.11'></a> Begin `@param` descriptions with "The ..."
+- [2.12](#2.11) <a name='2.12'></a> Surround optional parameters with brackets.
 
+  ```javascript
+  /**
+   * @param {Function} [callback] The optional callback function.
+   */
+  ```
 
 ### `@returns`
 - [2.1.1](#2.1.1) <a name='2.1.1'></a> Use `@returns` instead of `@return`.
