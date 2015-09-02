@@ -13,8 +13,8 @@ The very early beginnings of a JavaScript style guide.
 ## JavaScript
 
 - [1.1](#1.1) <a name='1.1'></a> In-line comments should always be `//` and never comment blocks (`/***/`).
-- [1.2](#1.2) <a name='1.2'></a> Comments above functions and global variables should always use comment blocks ("/***/") and JSDoc.
-- [1.3](#1.3) <a name='1.3'></a> In-line comments should always be above the line of code, never on the same line.
+- [1.2](#1.2) <a name='1.2'></a> Comments above functions and global variables should always use comment blocks (`/***/`) and JSDoc.
+- [1.3](#1.3) <a name='1.3'></a> Place in-line comments above the line of code, never on the same line.
 
   ```javascript
   // Bad
@@ -25,11 +25,12 @@ The very early beginnings of a JavaScript style guide.
     myFunction(2)
   ```
 
-- [1.4](#1.4) <a name='1.4'></a> In-line comments should be imperative present tense and end with a period.
+- [1.4](#1.4) <a name='1.4'></a> End in-line comments with a period.
+- [1.5](#1.5) <a name='1.5'></a> Write in-line comments in imperative present tense.
 
   ```javascript
   // Bad
-    // Gets the thing
+    // Gets the thing.
     myFunction(2)
 
   // Good
@@ -37,7 +38,7 @@ The very early beginnings of a JavaScript style guide.
     myFunction(2)
   ```
 
-- [1.5](#1.5) <a name='1.5'></a> There should always be a blank line above in-line comments.
+- [1.6](#1.6) <a name='1.5'></a> Insert a blank line above in-line comments.
 
   ```javascript
   // Bad
@@ -52,7 +53,7 @@ The very early beginnings of a JavaScript style guide.
     return thing.pop()
   ```
 
-- [1.6](#1.6) <a name='1.6'></a> Always use a space after keywords, including `if` and `else`.
+- [1.7](#1.7) <a name='1.6'></a> Use a space after keywords, e.g., `if` and `else`.
 
   ```javascript
   // Bad
@@ -68,7 +69,7 @@ The very early beginnings of a JavaScript style guide.
   while (true) {}
   ```
 
-- [1.7](#1.7) <a name='1.7'></a> Never use a space between a function definition's name and the left parenthesis. Needs to resemble how it is used. Spaces are used to separate keywords.
+- [1.8](#1.8) <a name='1.7'></a> Never use a space between a function definition's name and the left parenthesis. Needs to resemble how it is used. Spaces are used to separate keywords.
 
   ```javascript
   // Bad
@@ -78,7 +79,7 @@ The very early beginnings of a JavaScript style guide.
   function dance(param) {}
   ```
 
-- [1.8](#1.8) <a name='1.8'></a> Never use spaces inside parentheses.
+- [1.9](#1.9) <a name='1.8'></a> Never use spaces inside parentheses.
 
   ```javascript
   // Bad
@@ -111,7 +112,7 @@ The very early beginnings of a JavaScript style guide.
    */
   ```
 
-- [2.6](#2.6) <a name='2.6'></a> Use "*" for mixed datatypes (not `Mixed`).
+- [2.6](#2.6) <a name='2.6'></a> Use `*` for mixed datatypes (not `Mixed`).
 
   ```javascript
   // Bad
@@ -125,7 +126,7 @@ The very early beginnings of a JavaScript style guide.
    */
   ```
 
-- [2.7](#2.7) <a name='2.7'></a> All function descriptions should be indicative present sense.
+- [2.7](#2.7) <a name='2.7'></a> Write function descriptions in indicative present sense.
 - [2.8](#2.8) <a name='2.8'></a> Variadic arguments should have as their type: `{...Type}` and be given a plural name: values, arrays.
 
   ```javascript
@@ -203,10 +204,20 @@ The very early beginnings of a JavaScript style guide.
   ```
 
 ### `@example`
-- [2.2.1](#2.2.1) <a name='2.2.1'></a> Start an `@example` with a leading blank line.
-- [2.2.2](#2.2.2) <a name='2.2.2'></a> In `@example` block, comment the output of a function with a comment line below and a "=>".
+- [2.2.1](#2.2.1) <a name='2.2.1'></a> If including an `@example`, it must be the last tag within the comment block.
+- [2.2.2](#2.2.2) <a name='2.2.2'></a> Start an `@example` with a leading blank line.
+- [2.2.3](#2.2.3) <a name='2.2.3'></a> In `@example` block, comment the output of a function with a comment line below and a "=>".
 
   ```javascript
+  // Bad
+  /**
+   * @example
+   *
+   * // Returns `true`
+   * dantil.arraysEqual([], [])
+   */
+
+  // Good
   /**
    * @example
    *
@@ -215,7 +226,8 @@ The very early beginnings of a JavaScript style guide.
    */
   ```
 
-- [2.2.3](#2.2.3) <a name='2.2.3'></a> If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
+- [2.2.4](#2.2.4) <a name='2.2.4'></a> If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
+
   ```javascript
   /**
    * @example
