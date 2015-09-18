@@ -9,11 +9,11 @@ The very early beginnings of a JavaScript comments style guide.
 
     ```javascript
     // Bad
-      myFunction(2) // Does stuff
+    myFunction(2) // Does stuff
 
     // Good
-      // Does stuff
-      myFunction(2)
+    // Does stuff
+    myFunction(2)
     ```
 
   1. End in-line comments with a period.
@@ -21,27 +21,27 @@ The very early beginnings of a JavaScript comments style guide.
 
     ```javascript
     // Bad
-      // Gets the thing.
-      myFunction(2)
+    // Gets the thing.
+    myFunction(2)
 
     // Good
-      // Get the thing.
-      myFunction(2)
+    // Get the thing.
+    myFunction(2)
     ```
 
   1. Insert a blank line above in-line comments.
 
     ```javascript
     // Bad
-      var thing = getMe()
-      // My comment
-      return thing.pop()
+    var thing = getMe()
+    // My comment
+    return thing.pop()
 
     // Good
-      var thing = getMe()
+    var thing = getMe()
 
-      // My comment
-      return thing.pop()
+    // My comment
+    return thing.pop()
     ```
 
 ## JSDoc
@@ -179,7 +179,7 @@ The very early beginnings of a JavaScript comments style guide.
      * dantil.arraysEqual([], [])
      * // => true
      */
-  ```
+    ```
 
   1. If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
 
