@@ -1,17 +1,8 @@
-# JavaScript Style Guide
-The very early beginnings of a JavaScript style guide.
+# JavaScript Comments Style Guide
+The very early beginnings of a JavaScript comments style guide.
 
 
-## Table of Contents
-
-  1. [JavaScript](#javascript)
-  1. [JSDoc](#jsdoc)
-    1. [`@returns`](#returns)
-    1. [`@example`](#example)
-    1. [`@type`](#type)
-
-## JavaScript
-
+## In-Line Comments
   1. In-line comments should always be `//` and never comment blocks (`/***/`).
   1. Comments above functions and global variables should always use comment blocks (`/***/`) and JSDoc.
   1. Place in-line comments above the line of code, never on the same line.
@@ -51,42 +42,6 @@ The very early beginnings of a JavaScript style guide.
 
       // My comment
       return thing.pop()
-    ```
-
-  1. Use a space after keywords, e.g., `if` and `else`.
-
-    ```javascript
-    // Bad
-    if(num > 2) {}
-
-    // Bad
-    while(true){}
-
-    // Good
-    if (num > 2) {}
-
-    // Good
-    while (true) {}
-    ```
-
-  1. Never use a space between a function definition's name and the left parenthesis. Needs to resemble how it is used. Spaces are used to separate keywords.
-
-    ```javascript
-    // Bad
-    function dance (param) {}
-
-    // Good
-    function dance(param) {}
-    ```
-
-  1. Never use spaces inside parentheses.
-
-    ```javascript
-    // Bad
-    if ( true ) {}
-
-    // Good
-    if (true) {}
     ```
 
 ## JSDoc
