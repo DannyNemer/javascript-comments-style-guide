@@ -129,7 +129,7 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-### `@returns`
+#### `@returns`
   1. Use `@returns` instead of `@return`.
 
     ```javascript
@@ -158,7 +158,7 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-### `@example`
+#### `@example`
   1. If including an `@example`, it must be the last tag within the comment block.
   1. Start an `@example` with a leading blank line.
   1. In `@example` block, comment the output of a function with a comment line below and a "=>".
@@ -192,7 +192,7 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-### `@type`
+#### `@type`
   1. Tag variable type without brackets
 
     ```javascript
