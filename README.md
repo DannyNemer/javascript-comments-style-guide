@@ -81,7 +81,6 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Write function descriptions in indicative present sense.
   1. Variadic arguments should have as their type: `{...Type}` and be given a plural name: values, arrays.
 
     ```javascript
@@ -101,6 +100,21 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
+  1. Style the type name for `Array` values as the type of the array's contents followed by empty brackets.
+
+    ```javascript
+    // Bad
+    /**
+     * @param {Array} strings The strings to concatenate.
+     */
+
+    // Good
+    /**
+     * @param {string[]} strings The strings to concatenate.
+     */
+    ```
+
+  1. Write function descriptions in indicative present tense.
   1. Use backticks for all references to variables or keywords.
 
     ```javascript
