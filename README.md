@@ -5,43 +5,84 @@ The very early beginnings of a JavaScript comments style guide.
 ## In-Line Comments
   1. In-line comments should always be `//` and never comment blocks (`/***/`).
   1. Comments above functions and global variables should always use comment blocks (`/***/`) and JSDoc.
+  1. Use backticks for all references to variables or keywords.
+
+    ```javascript
+    // Bad
+    // Checks if options is ill-formed.
+    dantil.illFormedOpts(schema, options)
+
+    // Bad
+    // Checks if 'options' is ill-formed.
+    dantil.illFormedOpts(schema, options)
+
+    // Good
+    // Checks if `options` is ill-formed.
+    dantil.illFormedOpts(schema, options)
+
+    // Bad
+    /**
+     * @param {Object} schema The definitions of properties for 'options'.
+     * @param {Object} options The options object to check.
+     * @returns {boolean} Returns true if 'options' is ill-formed, else false.
+     */
+
+    // Good
+    /**
+     * @param {Object} schema The definitions of properties for `options`.
+     * @param {Object} options The options object to check.
+     * @returns {boolean} Returns `true` if `options` is ill-formed, else `false`.
+     */
+    ```
+
   1. Place in-line comments above the line of code, never on the same line.
 
     ```javascript
     // Bad
-    myFunction(2) // Does stuff
+    set(myObject, 'prop', 'val') // Set the value of 'prop' to 'val'.
 
     // Good
-    // Does stuff
-    myFunction(2)
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
     ```
 
-  1. End in-line comments with a period.
   1. Write in-line comments in imperative present tense.
 
     ```javascript
     // Bad
-    // Gets the thing.
-    myFunction(2)
+    // Sets the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
 
     // Good
-    // Get the thing.
-    myFunction(2)
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
+    ```
+
+  1. End in-line comments with a period.
+
+    ```javascript
+    // Bad
+    // Set the value of 'prop' to 'val'
+    set(myObject, 'prop', 'val')
+
+    // Good
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
     ```
 
   1. Insert a blank line above in-line comments.
 
     ```javascript
     // Bad
-    var thing = getMe()
-    // My comment
-    return thing.pop()
+    var myObject = {}
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
 
     // Good
-    var thing = getMe()
+    var myObject = {}
 
-    // My comment
-    return thing.pop()
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
     ```
 
 ## JSDoc
@@ -85,7 +126,7 @@ The very early beginnings of a JavaScript comments style guide.
     */
     ```
 
-  1. Use `*` for mixed datatypes (not `Mixed`).
+  1. Use `*` for mixed data types (not `Mixed`).
 
     ```javascript
     // Bad
@@ -133,26 +174,9 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
   1. Write function descriptions in indicative present tense.
-  1. Use backticks for all references to variables or keywords.
 
-    ```javascript
-    // Bad
-    /**
-     * Converts myString to lowercase.
-     *
-     * @param {string} myString The string to convert to lowercase.
-     */
-
-    // Bad
-    /**
-     * Converts `myString` to lowercase.
-     *
-     * @param {string} myString The string to convert to lowercase.
-     */
-    ```
-
-  1. Reference function parameters names in the function's description.
-  1. Begin `@param` descriptions with "The ..."
+  1. Reference function parameter names in the function's description.
+  1. Begin `@param` descriptions with "The ...".
   1. Surround optional parameters with brackets.
 
     ```javascript
@@ -216,6 +240,15 @@ The very early beginnings of a JavaScript comments style guide.
   1. If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
 
     ```javascript
+    // Bad
+    /**
+     * @example
+     *
+     * dantil.logError('what?')
+     * // => Prints "Error: what?"
+     */
+
+    // Good
     /**
      * @example
      *
