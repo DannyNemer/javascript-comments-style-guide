@@ -86,17 +86,17 @@ The very early beginnings of a JavaScript comments style guide.
     ```javascript
     // Bad
     /**
-     * @param {...String} stringN The strings to concatenate.
+     * @param {...string} stringN The strings to concatenate.
      */
 
     // Bad
     /**
-     * @param {...String} string [, stringN] The values to print.
+     * @param {...string} string [, stringN] The values to print.
      */
 
     // Good
     /**
-     * @param {...String} strings The strings to concatenate.
+     * @param {...string} strings The strings to concatenate.
      */
     ```
 
@@ -122,14 +122,14 @@ The very early beginnings of a JavaScript comments style guide.
     /**
      * Converts myString to lowercase.
      *
-     * @param {String} myString The string to convert to lowercase.
+     * @param {string} myString The string to convert to lowercase.
      */
 
     // Bad
     /**
      * Converts `myString` to lowercase.
      *
-     * @param {String} myString The string to convert to lowercase.
+     * @param {string} myString The string to convert to lowercase.
      */
     ```
 
