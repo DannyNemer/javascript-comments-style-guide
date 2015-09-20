@@ -67,6 +67,24 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
+  1. Use uppercase for labels of complex data types: `Object`, `Array`, and `Function`.
+
+    ```javascript
+    // Bad
+    /**
+     * @param {array} The array to modify.
+     * @param {function} The function invoked per iteration.
+     * @returns {array} Returns the new object.
+     */
+
+    // Good
+   /**
+    * @param {Array} The array to modify.
+    * @param {Function} The function invoked per iteration.
+    * @returns {Array} Returns the new object.
+    */
+    ```
+
   1. Use `*` for mixed datatypes (not `Mixed`).
 
     ```javascript
