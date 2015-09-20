@@ -49,7 +49,7 @@ The very early beginnings of a JavaScript comments style guide.
   1. Separate every element with a single space - do not align elements.
   1. Separate the function description from the tags with a blank line.
   1. Lead with tags without arguments (e.g., `@private`, `@static`).
-  1. Use lowercase for primitive data types. In JavaScript, `'danny'` is not an instance of `String`. Some applies of `true` and `Boolean`, and `7` and `Number`.
+  1. Use lowercase for labels of primitive data types. In JavaScript, `'danny'` is not an instance of `String`, `true` is not an instance of `Boolean`, and `7` is not an instance of `Number`.
 
     ```javascript
     // Bad
