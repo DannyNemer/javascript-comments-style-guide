@@ -3,8 +3,71 @@ The very early beginnings of a JavaScript comments style guide.
 
 
 ## In-Line Comments
-  1. In-line comments should always be `//` and never comment blocks (`/***/`).
-  1. Comments above functions and global variables should always use comment blocks (`/***/`) and JSDoc.
+  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its paramters, and its return value, and specify types for all parameters and return values.
+
+    ```javascript
+    // Bad
+    // Replaces `'~'` in `path` with the home directory path.
+    //
+    // @param {string} path The file path.
+    // @returns {string} Returns `path` with `'~'` replaced with the home directory.
+    dantil.expandHomeDir = function (path) {
+
+      // ...stuff...
+
+      return modifedPath
+    }
+
+    // Good
+    /**
+     * Replaces `'~'` in `path` with the home directory path.
+     *
+     * @param {string} path The file path.
+     * @returns {string} Returns `path` with `'~'` replaced with the home directory.
+     */
+    dantil.expandHomeDir = function (path) {
+
+      // ...stuff...
+
+      return modifedPath
+    }
+    ```
+
+  1. Use `//` for in-line comments. Place in-line comments on a newline above the subject of the comment. Put an empty line before the comment.
+
+    ```javascript
+    // Bad
+    var myObject = {}
+    set(myObject, 'prop', 'val') // Set the value of 'prop' to 'val'.
+
+    // Still bad
+    var myObject = {}
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
+
+    // Good
+    var myObject = {}
+
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
+    ```
+
+  1. Write in-line comments in imperative present tense. End in-line comments with a period.
+
+    ```javascript
+    // Bad
+    // Sets the value of 'prop' to 'val'
+    set(myObject, 'prop', 'val')
+
+    // Still bad
+    // Set the value of 'prop' to 'val'
+    set(myObject, 'prop', 'val')
+
+    // Good
+    // Set the value of 'prop' to 'val'.
+    set(myObject, 'prop', 'val')
+    ```
+
   1. Use backticks for all references to variables or keywords.
 
     ```javascript
@@ -33,56 +96,6 @@ The very early beginnings of a JavaScript comments style guide.
      * @param {Object} options The options object to check.
      * @returns {boolean} Returns `true` if `options` is ill-formed, else `false`.
      */
-    ```
-
-  1. Place in-line comments above the line of code, never on the same line.
-
-    ```javascript
-    // Bad
-    set(myObject, 'prop', 'val') // Set the value of 'prop' to 'val'.
-
-    // Good
-    // Set the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
-    ```
-
-  1. Write in-line comments in imperative present tense.
-
-    ```javascript
-    // Bad
-    // Sets the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
-
-    // Good
-    // Set the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
-    ```
-
-  1. End in-line comments with a period.
-
-    ```javascript
-    // Bad
-    // Set the value of 'prop' to 'val'
-    set(myObject, 'prop', 'val')
-
-    // Good
-    // Set the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
-    ```
-
-  1. Insert a blank line above in-line comments.
-
-    ```javascript
-    // Bad
-    var myObject = {}
-    // Set the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
-
-    // Good
-    var myObject = {}
-
-    // Set the value of 'prop' to 'val'.
-    set(myObject, 'prop', 'val')
     ```
 
 ## JSDoc
