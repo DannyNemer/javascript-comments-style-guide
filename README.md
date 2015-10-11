@@ -197,6 +197,19 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
+  1. If a parameter or return value is of variadic type, list the types with the `|` symbol.
+    ```js
+    // Bad
+    /**
+     * @param {*} predicate The function invoked per iteration.
+     */
+
+    // Good
+    /**
+     * @param {Function|Object|string} predicate The function invoked per iteration.
+     */
+    ```
+
 #### `@returns`
   1. Use `@returns` instead of `@return`.
 
