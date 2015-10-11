@@ -100,9 +100,102 @@ The very early beginnings of a JavaScript comments style guide.
 
 ## JSDoc
   1. End every description with a period.
-  1. Separate every element with a single space - do not align elements.
+
+    ```js
+    // Bad
+    /**
+     * Converts `string` to camel case
+     *
+     * @param {string} string The string to convert
+     * @returns {string} Returns the camel cased string
+     */
+
+    // Good
+    /**
+     * Converts `string` to camel case.
+     *
+     * @param {string} string The string to convert.
+     * @returns {string} Returns the camel cased string.
+     */
+    ```
+
+  1. Separate every element with a single space; do not align elements.
+
+    ```js
+    // Bad
+    /**
+     * @param {string}   filePath   The path of the source file to search.
+     * @param {*}        value      The value to search for.
+     * @param {boolean}  stringify  Specify converting `value` to a string representation before searching.
+     */
+
+    // Good
+    /**
+     * @param {string} filePath The path of the source file to search.
+     * @param {*} value The value to search for.
+     * @param {boolean} stringify Specify converting `value` to a string representation before searching.
+     */
+    ```
+
   1. Separate the function description from the tags with a blank line.
-  1. Lead with tags without arguments (e.g., `@private`, `@static`).
+
+    ```js
+    // Bad
+    /**
+     * Stringifies and writes `obj` to a JSON file at `path`.
+     * @param {string} path The file path to write to.
+     * @param {Object} obj The object to save to `path`.
+     */
+
+    // Good
+    /**
+     * Stringifies and writes `obj` to a JSON file at `path`.
+     *
+     * @param {string} path The file path to write to.
+     * @param {Object} obj The object to save to `path`.
+     */
+    ```
+
+  1. Lead with tags without arguments (e.g., `@private`, `@static`), then tags without descriptions (e.g., `@memberof`), and always end with `@example`, if any.
+
+    ```js
+    // Bad
+    /**
+     * Removes any extraneous digits from `number`, which result from operations limited by JavaScript's floating point number precision.
+     *
+     * @param {number} number The number to rid of any extraneous digits.
+     * @returns {number} Returns the cleaned number.
+     * @memberOf dantil
+     * @category Number
+     * @static
+     * @example
+     *
+     * var number = 0.1 * 0.2
+     * // => 0.020000000000000004
+     *
+     * number = dantil.cleanFloat(number)
+     * // => 0.02
+     */
+
+    // Good
+    /**
+     * Removes any extraneous digits from `number`, which result from operations limited by JavaScript's floating point number precision.
+     *
+     * @static
+     * @memberOf dantil
+     * @category Number
+     * @param {number} number The number to rid of any extraneous digits.
+     * @returns {number} Returns the cleaned number.
+     * @example
+     *
+     * var number = 0.1 * 0.2
+     * // => 0.020000000000000004
+     *
+     * number = dantil.cleanFloat(number)
+     * // => 0.02
+     */
+    ```
+
   1. Use lowercase for labels of primitive data types. In JavaScript, `'danny'` is not an instance of `String`, `true` is not an instance of `Boolean`, and `7` is not an instance of `Number`.
 
     ```js
