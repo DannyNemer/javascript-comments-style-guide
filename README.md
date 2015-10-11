@@ -5,7 +5,7 @@ The very early beginnings of a JavaScript comments style guide.
 ## In-Line Comments
   1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its paramters, and its return value, and specify types for all parameters and return values.
 
-    ```javascript
+    ```js
     // Bad
     // Replaces `'~'` in `path` with the home directory path.
     //
@@ -35,7 +35,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Use `//` for in-line comments. Place in-line comments on a newline above the subject of the comment. Put an empty line before the comment.
 
-    ```javascript
+    ```js
     // Bad
     var myObject = {}
     set(myObject, 'prop', 'val') // Set the value of 'prop' to 'val'.
@@ -54,7 +54,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Write in-line comments in imperative present tense. End in-line comments with a period.
 
-    ```javascript
+    ```js
     // Bad
     // Sets the value of 'prop' to 'val'
     set(myObject, 'prop', 'val')
@@ -70,7 +70,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Use backticks for all references to variables or keywords.
 
-    ```javascript
+    ```js
     // Bad
     // Checks if options is ill-formed.
     dantil.illFormedOpts(schema, options)
@@ -105,7 +105,7 @@ The very early beginnings of a JavaScript comments style guide.
   1. Lead with tags without arguments (e.g., `@private`, `@static`).
   1. Use lowercase for labels of primitive data types. In JavaScript, `'danny'` is not an instance of `String`, `true` is not an instance of `Boolean`, and `7` is not an instance of `Number`.
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @param {String} string The string to check.
@@ -123,7 +123,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Use uppercase for labels of complex data types: `Object`, `Array`, and `Function`.
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @param {array} The array to modify.
@@ -132,16 +132,16 @@ The very early beginnings of a JavaScript comments style guide.
      */
 
     // Good
-   /**
-    * @param {Array} The array to modify.
-    * @param {Function} The function invoked per iteration.
-    * @returns {Array} Returns the new object.
-    */
+    /**
+     * @param {Array} The array to modify.
+     * @param {Function} The function invoked per iteration.
+     * @returns {Array} Returns the new object.
+     */
     ```
 
   1. Use `*` for mixed data types (not `Mixed`).
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @returns {Mixed} Returns the return value of `callback`.
@@ -155,7 +155,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Variadic arguments should have as their type: `{...Type}` and be given a plural name: values, arrays.
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @param {...string} stringN The strings to concatenate.
@@ -174,7 +174,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Style the type name for `Array` values as the type of the array's contents followed by empty brackets.
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @param {Array} strings The strings to concatenate.
@@ -187,12 +187,11 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
   1. Write function descriptions in indicative present tense.
-
   1. Reference function parameter names in the function's description.
   1. Begin `@param` descriptions with "The ...".
   1. Surround optional parameters with brackets.
 
-    ```javascript
+    ```js
     /**
      * @param {Function} [callback] The optional callback function.
      */
@@ -201,7 +200,7 @@ The very early beginnings of a JavaScript comments style guide.
 #### `@returns`
   1. Use `@returns` instead of `@return`.
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @return array Returns the new array.
@@ -215,7 +214,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. Start every `@returns` description with "Returns ...".
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @returns array The new array.
@@ -232,7 +231,7 @@ The very early beginnings of a JavaScript comments style guide.
   1. Start an `@example` with a leading blank line.
   1. In `@example` block, comment the output of a function with a comment line below and a "=>".
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @example
@@ -252,7 +251,7 @@ The very early beginnings of a JavaScript comments style guide.
 
   1. If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @example
@@ -273,7 +272,7 @@ The very early beginnings of a JavaScript comments style guide.
 #### `@type`
   1. Tag variable type without brackets
 
-    ```javascript
+    ```js
     // Bad
     /**
      * @type {Array}
