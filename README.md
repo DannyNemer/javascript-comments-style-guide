@@ -326,7 +326,6 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin `@param` descriptions with "The ...".
   1. Surround optional parameters with brackets.
 
     ```js
@@ -372,6 +371,26 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
 #### `@param`
+  1. Begin non-`boolean` `@param` descriptions with "The ...".
+
+    ```js
+    // Bad
+    /**
+     ...
+     * @param {string} path Where to write `stdout`.
+     * @param {Function} func Processed while writing output to `path`.
+     * @returns {*} Returns the value returned by `func`, if any.
+     */
+
+    // Gppd
+    /**
+     ...
+     * @param {string} path The path where to write `stdout`.
+     * @param {Function} func The function to process while writing output to `path`.
+     * @returns {*} Returns the value returned by `func`, if any.
+     */
+    ```
+
   1. Begin `@param` descriptions of type `boolean` with "Specify ..." and without conjunctions.
 
     ```js
