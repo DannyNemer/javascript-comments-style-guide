@@ -280,6 +280,19 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
   1. Write function descriptions in indicative present tense.
+
+    ```js
+    // Bad
+    /**
+     * Create a function that memoizes the result of `func`.
+     */
+
+    // Good
+    /**
+     * Creates a function that memoizes the result of `func`.
+     */
+    ```
+
   1. Reference function parameter names in the function's description.
   1. Begin `@param` descriptions with "The ...".
   1. Surround optional parameters with brackets.
