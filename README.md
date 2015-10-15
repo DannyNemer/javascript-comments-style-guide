@@ -1,5 +1,5 @@
 # JavaScript Comments Style Guide
-The very early beginnings of a JavaScript comments style guide.
+The beginnings of a JavaScript comments style guide.
 
 
 ## In-Line Comments
@@ -256,7 +256,7 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Variadic arguments should have as their type: `{...Type}` and be given a plural name: values, arrays.
+  1. Stylize the type of variadic arguments as `{...Type}` and use plural names.
 
     ```js
     // Bad
@@ -351,7 +351,7 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin descriptions for functions that return a `boolean` for checks/validations with "Checks if ...".
+  1. Begin descriptions for functions which perform checks or validations and return a `boolean` with "Checks if ...".
 
     ```js
     // Bad
@@ -418,6 +418,14 @@ The very early beginnings of a JavaScript comments style guide.
   1. List all proprieties of an options object with `@param` tags, including their default values, if any.
 
     ```js
+    // Bad
+    /**
+     ...
+     * @param func {Function}: The function to debounce.
+     * @param [options] {Object}: The options object.
+     */
+
+    // Good
     /**
      ...
      * @param func {Function}: The function to debounce.
@@ -509,7 +517,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
 #### `@type`
-  1. Tag variable type without brackets
+  1. Do not surround data type names of `@type` tags (for global variables) with brackets.
 
     ```js
     // Bad
