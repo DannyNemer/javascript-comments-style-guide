@@ -345,6 +345,18 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
+  1. List all proprieties of an options object with `@param` tags, including their default values, if any.
+
+    ```js
+    /**
+     * @param func {Function}: The function to debounce.
+     * @param [options] {Object}: The options object.
+     * @param [options.leading=false] {boolean}: Specify invoking on the leading edge of the timeout.
+     * @param [options.maxWait] {number}: The maximum time func is allowed to be delayed before it’s invoked.
+     * @param [options.trailing=true] {boolean}: Specify invoking on the trailing edge of the timeout.
+     */
+    ```
+
 #### `@returns`
   1. Use `@returns` instead of `@return`.
 
