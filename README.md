@@ -293,7 +293,24 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Reference function parameter names in the function's description.
+  1. Include function parameter names in the function's description.
+
+    ```js
+    // Bad
+    /**
+     * Create a function that memoizes the result of the provided function.
+     *
+     * @param {Function} func The function to curry.
+     */
+
+    // Good
+    /**
+     * Creates a function that memoizes the result of `func`.
+     *
+     * @param {Function} func The function to curry.
+     */
+    ```
+
   1. Begin `@param` descriptions with "The ...".
   1. Surround optional parameters with brackets.
 
