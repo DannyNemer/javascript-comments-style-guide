@@ -85,6 +85,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Bad
     /**
+     ...
      * @param {Object} schema The definitions of properties for 'options'.
      * @param {Object} options The options object to check.
      * @returns {boolean} Returns true if 'options' is ill-formed, else false.
@@ -92,6 +93,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @param {Object} schema The definitions of properties for `options`.
      * @param {Object} options The options object to check.
      * @returns {boolean} Returns `true` if `options` is ill-formed, else `false`.
@@ -124,6 +126,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {string}   filePath   The path of the source file to search.
      * @param {*}        value      The value to search for.
      * @param {boolean}  stringify  Specify converting `value` to a string representation before searching.
@@ -131,6 +134,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @param {string} filePath The path of the source file to search.
      * @param {*} value The value to search for.
      * @param {boolean} stringify Specify converting `value` to a string representation before searching.
@@ -201,6 +205,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {String} string The string to check.
      * @param {Number} number The number to check.
      * @returns {Boolean} Returns `true` if `string` is equal to `number`.
@@ -208,6 +213,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @param {string} string The string to check.
      * @param {number} number The number to check.
      * @returns {boolean} Returns `true` if `string` is equal to `number`.
@@ -219,6 +225,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {array} The array to modify.
      * @param {function} The function invoked per iteration.
      * @returns {array} Returns the new object.
@@ -226,6 +233,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @param {Array} The array to modify.
      * @param {Function} The function invoked per iteration.
      * @returns {Array} Returns the new object.
@@ -237,11 +245,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @returns {Mixed} Returns the return value of `callback`.
      */
 
     // Good
     /**
+     ...
      * @returns {*} Returns the return value of `callback`.
      */
     ```
@@ -251,16 +261,19 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {...string} stringN The strings to concatenate.
      */
 
     // Bad
     /**
+     ...
      * @param {...string} string [, stringN] The values to print.
      */
 
     // Good
     /**
+     ...
      * @param {...string} strings The strings to concatenate.
      */
     ```
@@ -270,11 +283,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {Array} strings The strings to concatenate.
      */
 
     // Good
     /**
+     ...
      * @param {string[]} strings The strings to concatenate.
      */
     ```
@@ -316,6 +331,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     ```js
     /**
+     ...
      * @param {Function} [callback] The optional callback function.
      */
     ```
@@ -325,11 +341,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {*} predicate The function invoked per iteration.
      */
 
     // Good
     /**
+     ...
      * @param {Function|Object|string} predicate The function invoked per iteration.
      */
     ```
@@ -359,17 +377,20 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @param {boolean} isSorted Specifies the array is sorted.
      */
 
     // Bad - do not use conjunctions (e.g., "whether", "if")
     /**
+     ...
      * @param {boolean} isSorted Specify whether the array is sorted.
      * @param {boolean} isMutable Specify if the array array is mutable.
      */
 
     // Good
     /**
+     ...
      * @param {boolean} isSorted Specify the array is sorted.
      * @param {boolean} leading Specify invoking on the leading edge of the timeout.
      */
@@ -379,6 +400,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     ```js
     /**
+     ...
      * @param func {Function}: The function to debounce.
      * @param [options] {Object}: The options object.
      * @param [options.leading=false] {boolean}: Specify invoking on the leading edge of the timeout.
@@ -393,11 +415,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @return array Returns the new array.
      */
 
     // Good
     /**
+     ...
      * @returns array Returns the new array.
      */
     ```
@@ -407,11 +431,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @returns array The new array.
      */
 
     // Good
     /**
+     ...
      * @returns array Returns the new array.
      */
     ```
@@ -424,6 +450,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @example
      *
      * // Returns `true`
@@ -432,6 +459,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @example
      *
      * dantil.arraysEqual([], [])
@@ -444,6 +472,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @example
      *
      * dantil.logError('what?')
@@ -452,6 +481,7 @@ The very early beginnings of a JavaScript comments style guide.
 
     // Good
     /**
+     ...
      * @example
      *
      * dantil.logError('what?')
@@ -465,11 +495,13 @@ The very early beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
+     ...
      * @type {Array}
      */
 
     // Good
     /**
+     ...
      * @type Array
      */
     ```
