@@ -303,6 +303,28 @@ The very early beginnings of a JavaScript comments style guide.
      */
     ```
 
+#### `@param`
+  1. Begin `@param` descriptions of type `boolean` with "Specify ..." and without conjunctions.
+
+    ```js
+    // Bad
+    /**
+     * @param {boolean} isSorted Specifies the array is sorted.
+     */
+
+    // Bad - do not use conjunctions (e.g., "whether", "if")
+    /**
+     * @param {boolean} isSorted Specify whether the array is sorted.
+     * @param {boolean} isMutable Specify if the array array is mutable.
+     */
+
+    // Good
+    /**
+     * @param {boolean} isSorted Specify the array is sorted.
+     * @param {boolean} leading Specify invoking on the leading edge of the timeout.
+     */
+    ```
+
 #### `@returns`
   1. Use `@returns` instead of `@return`.
 
