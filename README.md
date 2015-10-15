@@ -291,6 +291,7 @@ The very early beginnings of a JavaScript comments style guide.
     ```
 
   1. If a parameter or return value is of variadic type, list the types with the `|` symbol.
+
     ```js
     // Bad
     /**
@@ -300,6 +301,25 @@ The very early beginnings of a JavaScript comments style guide.
     // Good
     /**
      * @param {Function|Object|string} predicate The function invoked per iteration.
+     */
+    ```
+
+  1. Begin descriptions for functions that return a `boolean` for checks/validations with "Checks if ...".
+
+    ```js
+    // Bad
+    /**
+     * Determines if `value` is greater than `other`.
+     */
+
+    // Bad
+    /**
+     * Checks whether `value` is greater than `other`.
+     */
+
+    // Good
+    /**
+     * Checks if `value` is greater than `other`.
      */
     ```
 
