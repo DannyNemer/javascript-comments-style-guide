@@ -1,8 +1,17 @@
 # JavaScript Comments Style Guide
 The beginnings of a JavaScript comments style guide.
 
+## Table of Contents
+
+  1. [In-Line Comments](#in-line-comments)
+  1. [JSDoc](#jsdoc)
+    1. [`@param`](#param)
+    1. [`@returns`](#returns)
+    1. [`@example`](#example)
+    1. [`@type`](#type)
 
 ## In-Line Comments
+
   1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its paramters, and its return value, and specify types for all parameters and return values.
 
     ```js
@@ -101,6 +110,7 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 ## JSDoc
+
   1. End every description with a period.
 
     ```js
@@ -371,6 +381,7 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 #### `@param`
+
   1. Begin non-`boolean` `@param` descriptions with "The ...".
 
     ```js
@@ -437,6 +448,7 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 #### `@returns`
+
   1. Use `@returns` instead of `@return`.
 
     ```js
@@ -470,6 +482,7 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 #### `@example`
+
   1. If including an `@example`, it must be the last tag within the comment block.
   1. Start an `@example` with a leading blank line.
   1. In `@example` block, comment the output of a function with a comment line below and a "=>".
@@ -517,6 +530,7 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 #### `@type`
+
   1. Do not surround data type names of `@type` tags (for global variables) with brackets.
 
     ```js
