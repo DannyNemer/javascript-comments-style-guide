@@ -483,8 +483,45 @@ The beginnings of a JavaScript comments style guide.
 
 #### `@example`
 
-  1. If including an `@example`, it must be the last tag within the comment block.
+  1. Position an `@example` as the last tag within the comment block.
+
+    ```js
+    /**
+     * Replaces `'~'` in `path` (if present and at the path's start) with the home directory path.
+     *
+     * @static
+     * @memberOf dantil
+     * @category File System
+     * @param {string} path The file path.
+     * @returns {string} Returns `path` with `'~'`, if present, replaced with the home directory path.
+     * @example
+     *
+     * dantil.expandHomeDir('~/Desktop')
+     * // => '/Users/Danny/Desktop'
+     */
+    ```
+
   1. Start an `@example` with a leading blank line.
+
+    ```js
+    // Bad
+    /**
+     ...
+     * @example
+     * dantil.expandHomeDir('~/Desktop')
+     * // => '/Users/Danny/Desktop'
+     */
+
+    // Good
+    /**
+     ...
+     * @example
+     *
+     * dantil.expandHomeDir('~/Desktop')
+     * // => '/Users/Danny/Desktop'
+     */
+    ```
+
   1. In `@example` block, comment the output of a function with a comment line below and a "=>".
 
     ```js
