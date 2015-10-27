@@ -266,28 +266,6 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Stylize the type of variadic arguments as `{...Type}` and use plural names.
-
-    ```js
-    // Bad
-    /**
-     ...
-     * @param {...string} stringN The strings to concatenate.
-     */
-
-    // Bad
-    /**
-     ...
-     * @param {...string} string [, stringN] The values to print.
-     */
-
-    // Good
-    /**
-     ...
-     * @param {...string} strings The strings to concatenate.
-     */
-    ```
-
   1. Style the type name for `Array` values as the type of the array's contents followed by empty brackets.
 
     ```js
@@ -444,6 +422,34 @@ The beginnings of a JavaScript comments style guide.
      * @param [options.leading=false] {boolean}: Specify invoking on the leading edge of the timeout.
      * @param [options.maxWait] {number}: The maximum time func is allowed to be delayed before it’s invoked.
      * @param [options.trailing=true] {boolean}: Specify invoking on the trailing edge of the timeout.
+     */
+    ```
+
+  1. Stylize the type of variadic arguments as `{...Type}`, use plural variable names, and surround variable names in brackets to indicate optionality.
+
+    ```js
+    // Bad
+    /**
+     ...
+     * @param {...string} stringN The strings to concatenate.
+     */
+
+    // Bad
+    /**
+     ...
+     * @param {...string} string [, stringN] The values to print.
+     */
+
+    // Still bad
+    /**
+     ...
+     * @param {...string} strings The strings to concatenate.
+     */
+
+    // Good
+    /**
+     ...
+     * @param {...string} [strings] The strings to concatenate.
      */
     ```
 
