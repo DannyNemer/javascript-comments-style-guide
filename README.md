@@ -139,7 +139,8 @@ The beginnings of a JavaScript comments style guide.
      ...
      * @param {string}   filePath   The path of the source file to search.
      * @param {*}        value      The value to search for.
-     * @param {boolean}  stringify  Specify converting `value` to a string representation before searching.
+     * @param {boolean}  stringify  Specify converting `value` to a string
+     *   representation before searching.
      */
 
     // Good
@@ -147,7 +148,8 @@ The beginnings of a JavaScript comments style guide.
      ...
      * @param {string} filePath The path of the source file to search.
      * @param {*} value The value to search for.
-     * @param {boolean} stringify Specify converting `value` to a string representation before searching.
+     * @param {boolean} stringify Specify converting `value` to a string
+     *   representation before searching.
      */
     ```
 
@@ -175,7 +177,8 @@ The beginnings of a JavaScript comments style guide.
     ```js
     // Bad
     /**
-     * Removes any extraneous digits from `number`, which result from operations limited by JavaScript's floating point number precision.
+     * Removes any extraneous digits from `number`, which result from operations
+     * limited by JavaScript's floating point number precision.
      *
      * @param {number} number The number to rid of any extraneous digits.
      * @returns {number} Returns the cleaned number.
@@ -193,7 +196,8 @@ The beginnings of a JavaScript comments style guide.
 
     // Good
     /**
-     * Removes any extraneous digits from `number`, which result from operations limited by JavaScript's floating point number precision.
+     * Removes any extraneous digits from `number`, which result from operations
+     * limited by JavaScript's floating point number precision.
      *
      * @static
      * @memberOf dantil
@@ -419,9 +423,12 @@ The beginnings of a JavaScript comments style guide.
      ...
      * @param func {Function}: The function to debounce.
      * @param [options] {Object}: The options object.
-     * @param [options.leading=false] {boolean}: Specify invoking on the leading edge of the timeout.
-     * @param [options.maxWait] {number}: The maximum time func is allowed to be delayed before it’s invoked.
-     * @param [options.trailing=true] {boolean}: Specify invoking on the trailing edge of the timeout.
+     * @param [options.leading=false] {boolean}: Specify invoking on the leading edge
+     *   of the timeout.
+     * @param [options.maxWait] {number}: The maximum time func is allowed to be
+     *   delayed before it’s invoked.
+     * @param [options.trailing=true] {boolean}: Specify invoking on the trailing
+     *   edge of the timeout.
      */
     ```
 
@@ -493,13 +500,15 @@ The beginnings of a JavaScript comments style guide.
 
     ```js
     /**
-     * Replaces `'~'` in `path` (if present and at the path's start) with the home directory path.
+     * Replaces `'~'` in `path` (if present and at the path's start) with the home
+     * directory path.
      *
      * @static
      * @memberOf dantil
      * @category File System
      * @param {string} path The file path.
-     * @returns {string} Returns `path` with `'~'`, if present, replaced with the home directory path.
+     * @returns {string} Returns `path` with `'~'`, if present, replaced with the
+     *   home directory path.
      * @example
      *
      * dantil.expandHomeDir('~/Desktop')
