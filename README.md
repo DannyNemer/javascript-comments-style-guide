@@ -343,22 +343,28 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin descriptions for functions which perform checks or validations and return a `boolean` with "Checks if ...".
+  1. Begin descriptions for functions which perform checks or validations and return a `boolean` with "Checks if `firstArg` ...".
 
     ```js
     // Bad
     /**
      * Determines if `value` is greater than `other`.
+     ...
      */
 
     // Bad
     /**
      * Checks whether `value` is greater than `other`.
+     ...
      */
 
     // Good
     /**
      * Checks if `value` is greater than `other`.
+     *
+     * @param {number} value The number to compare.
+     * @param {number} other The other number to compare.
+     * @returns {Boolean} Returns `true` if `value` is greater than `other`, else `false`.
      */
     ```
 
