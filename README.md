@@ -77,7 +77,7 @@ The beginnings of a JavaScript comments style guide.
     set(myObject, 'prop', 'val')
     ```
 
-  1. Use backticks for all references to variables or keywords.
+  1. Use backticks for variable names and keywords.
 
     ```js
     // Bad
