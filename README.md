@@ -12,7 +12,7 @@ The beginnings of a JavaScript comments style guide.
 
 ## In-Line Comments
 
-  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its paramters, and its return value, and specify types for all parameters and return values.
+  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its parameters, and its return value, and specify types for all parameters and return values.
 
     ```js
     // Bad
@@ -381,7 +381,7 @@ The beginnings of a JavaScript comments style guide.
      * @returns {*} Returns the value returned by `func`, if any.
      */
 
-    // Gppd
+    // Good
     /**
      ...
      * @param {string} path The path where to write `stdout`.
@@ -431,7 +431,7 @@ The beginnings of a JavaScript comments style guide.
      * @param [options] {Object}: The options object.
      * @param [options.leading=false] {boolean}: Specify invoking on the leading edge
      *   of the timeout.
-     * @param [options.maxWait] {number}: The maximum time func is allowed to be
+     * @param [options.maxWait] {number}: The maximum time `func` is allowed to be
      *   delayed before it’s invoked.
      * @param [options.trailing=true] {boolean}: Specify invoking on the trailing
      *   edge of the timeout.
