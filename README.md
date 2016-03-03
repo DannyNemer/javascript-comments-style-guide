@@ -390,7 +390,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin `@param` descriptions of type `boolean` with "Specify ..." and without conjunctions.
+  1. Begin `boolean` `@param` descriptions with "Specify ..." and without conjunctions.
 
     ```js
     // Bad
