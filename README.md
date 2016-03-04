@@ -12,36 +12,6 @@ The beginnings of a JavaScript comments style guide.
 
 ## In-Line Comments
 
-  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its parameters, and its return value, and specify types for all parameters and return values.
-
-    ```js
-    // Bad
-    // Replaces `'~'` in `path` with the home directory path.
-    //
-    // @param {string} path The file path.
-    // @returns {string} Returns `path` with `'~'` replaced with the home directory.
-    dantil.expandHomeDir = function (path) {
-
-      // ...stuff...
-
-      return modifedPath
-    }
-
-    // Good
-    /**
-     * Replaces `'~'` in `path` with the home directory path.
-     *
-     * @param {string} path The file path.
-     * @returns {string} Returns `path` with `'~'` replaced with the home directory.
-     */
-    dantil.expandHomeDir = function (path) {
-
-      // ...stuff...
-
-      return modifedPath
-    }
-    ```
-
   1. Use `//` for in-line comments. Place in-line comments on a newline above the subject of the comment. Put an empty line before the comment.
 
     ```js
@@ -110,6 +80,36 @@ The beginnings of a JavaScript comments style guide.
     ```
 
 ## JSDoc
+
+  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its parameters, and its return value, and specify types for all parameters and return values.
+
+    ```js
+    // Bad
+    // Replaces `'~'` in `path` with the home directory path.
+    //
+    // @param {string} path The file path.
+    // @returns {string} Returns `path` with `'~'` replaced with the home directory.
+    dantil.expandHomeDir = function (path) {
+
+      // ...stuff...
+
+      return modifedPath
+    }
+
+    // Good
+    /**
+     * Replaces `'~'` in `path` with the home directory path.
+     *
+     * @param {string} path The file path.
+     * @returns {string} Returns `path` with `'~'` replaced with the home directory.
+     */
+    dantil.expandHomeDir = function (path) {
+
+      // ...stuff...
+
+      return modifedPath
+    }
+    ```
 
   1. End every description with a period.
 
