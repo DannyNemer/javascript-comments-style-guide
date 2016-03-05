@@ -12,7 +12,7 @@ The beginnings of a JavaScript comments style guide.
 
 ## In-Line Comments
 
-  1. Use `//` for in-line comments. Place in-line comments on a newline above the subject of the comment. Put an empty line before the comment.
+  1. Use `//` for in-line comments. Place in-line comments on a newline above the corresponding code, and below an empty line.
 
     ```js
     // Bad
@@ -31,7 +31,7 @@ The beginnings of a JavaScript comments style guide.
     set(myObject, 'prop', 'val')
     ```
 
-  1. Write in-line comments in imperative present tense. End in-line comments with a period.
+  1. Phrase in-line comments in imperative present tense. End in-line comments with a period.
 
     ```js
     // Bad
@@ -234,7 +234,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Use uppercase for labels of complex data types: `Object`, `Array`, and `Function`.
+  1. Use title case for labels of complex data types: `Object`, `Array`, and `Function`.
 
     ```js
     // Bad
