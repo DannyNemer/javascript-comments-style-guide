@@ -254,7 +254,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Use `*` for mixed data types (not `Mixed`).
+  1. Use `*` for mixed data types.
 
     ```js
     // Bad
