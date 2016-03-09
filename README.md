@@ -343,7 +343,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin descriptions for functions which perform checks or validations and return a `boolean` with "Checks if `firstArg` ...".
+  1. Begin descriptions for functions that perform checks or validations and return a `boolean` with "Checks if `firstArg` ...".
 
     ```js
     // Bad
