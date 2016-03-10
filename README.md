@@ -81,7 +81,7 @@ The beginnings of a JavaScript comments style guide.
 
 ## JSDoc
 
-  1. Use `/** ... */` for JSDoc above functions and global variables. Include descriptions for the function, its parameters, and its return value, and specify types for all parameters and return values.
+  1. Use `/** ... */` for JSDoc blocks above functions and global variables. Include descriptions for the function, its parameters, and its return value, and specify types for all parameters and return values.
 
     ```js
     // Bad
