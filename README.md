@@ -286,7 +286,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Write function descriptions in indicative present tense.
+  1. Phrase function descriptions in indicative present tense.
 
     ```js
     // Bad
