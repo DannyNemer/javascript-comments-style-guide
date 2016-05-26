@@ -358,6 +358,12 @@ The beginnings of a JavaScript comments style guide.
      ...
      */
 
+    // Bad
+    /**
+     * Checks `value` is greater than `other`.
+     ...
+     */
+
     // Good
     /**
      * Checks if `value` is greater than `other`.
