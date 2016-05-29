@@ -318,7 +318,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Surround optional parameters with brackets.
+  1. Surround names of optional parameters with brackets.
 
     ```js
     /**
@@ -327,7 +327,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If a parameter or return value is of variadic type, list the types with the `|` symbol.
+  1. If a parameter or return value is of variadic type, list all types, separated by the `|` symbol.
 
     ```js
     // Bad
@@ -343,7 +343,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Begin descriptions for functions that perform checks or validations and return a `boolean` with "Checks if `firstArg` ...".
+  1. Begin descriptions for functions that perform checks and return a `boolean` with "Checks if `firstArg` ...".
 
     ```js
     // Bad
@@ -549,7 +549,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. In `@example` block, comment the output of a function with a comment line below and a "=>".
+  1. In an `@example` block, add an inline comment below the function that starts with "=>" and shows the example's output.
 
     ```js
     // Bad
