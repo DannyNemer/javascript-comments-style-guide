@@ -327,7 +327,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If a parameter or return value is of variadic type, list all types, separated by the `|` symbol.
+  1. If a parameter or return value can be of varying type, list all types, separated by the `|` symbol.
 
     ```js
     // Bad
