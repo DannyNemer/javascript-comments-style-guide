@@ -327,13 +327,20 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If a parameter or return value can be of varying type, list all types, separated by the `|` symbol.
+  1. If a parameter or return value can be of varying type, list all types, complex types before primitive types, separated by the `|` symbol.
 
     ```js
     // Bad
     /**
      ...
      * @param {*} predicate The function invoked per iteration.
+     */
+
+    ```js
+    // Bad - primitive types list before complex types
+    /**
+     ...
+     * @param {string|Function|Object} predicate The function invoked per iteration.
      */
 
     // Good
