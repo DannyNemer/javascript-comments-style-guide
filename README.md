@@ -487,13 +487,13 @@ The beginnings of a JavaScript comments style guide.
     // Bad
     /**
      ...
-     * @return array Returns the new array.
+     * @return {string} Returns the padded string.
      */
 
     // Good
     /**
      ...
-     * @returns array Returns the new array.
+     * @returns {string} Returns the padded string.
      */
     ```
 
@@ -503,13 +503,13 @@ The beginnings of a JavaScript comments style guide.
     // Bad
     /**
      ...
-     * @returns array The new array.
+     * @returns {string} the padded string
      */
 
     // Good
     /**
      ...
-     * @returns array Returns the new array.
+     * @returns {string} Returns the padded string.
      */
     ```
 
