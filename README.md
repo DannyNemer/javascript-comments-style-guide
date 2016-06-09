@@ -240,17 +240,17 @@ The beginnings of a JavaScript comments style guide.
     // Bad
     /**
      ...
-     * @param {array} The array to modify.
+     * @param {object} The object to modify.
      * @param {function} The function invoked per iteration.
-     * @returns {array} Returns the new object.
+     * @returns {object} Returns the new object.
      */
 
     // Good
     /**
      ...
-     * @param {Array} The array to modify.
+     * @param {Object} The object to modify.
      * @param {Function} The function invoked per iteration.
-     * @returns {Array} Returns the new object.
+     * @returns {Object} Returns the new object.
      */
     ```
 
