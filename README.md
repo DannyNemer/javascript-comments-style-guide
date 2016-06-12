@@ -348,6 +348,12 @@ The beginnings of a JavaScript comments style guide.
      ...
      * @param {Function|Object|string} predicate The function invoked per iteration.
      */
+
+    // Good
+    /**
+     ...
+     * @returns {string|undefined} Returns the key of the matched element, else `undefined`.
+     */
     ```
 
   1. Begin descriptions for functions that perform checks and return a `boolean` with "Checks if `firstArg` ...".
