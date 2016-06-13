@@ -284,6 +284,18 @@ The beginnings of a JavaScript comments style guide.
      ...
      * @param {string[]} strings The strings to concatenate.
      */
+
+    // Bad
+    /**
+     ...
+     * @returns {Array} Returns the string segments.
+     */
+
+    // Good
+    /**
+     ...
+     * @returns {string[]} Returns the string segments.
+     */
     ```
 
   1. Phrase function descriptions in indicative present tense.
