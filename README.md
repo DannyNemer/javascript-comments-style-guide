@@ -348,7 +348,6 @@ The beginnings of a JavaScript comments style guide.
      * @param {*} predicate The function invoked per iteration.
      */
 
-    ```js
     // Bad - primitive types list before complex types
     /**
      ...
