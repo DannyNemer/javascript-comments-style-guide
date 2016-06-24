@@ -367,6 +367,34 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
+  1. If a parameter of return value can be a type or an array of that type, list the non-array type first.
+
+    ```js
+    // Bad
+    /**
+     ...
+     * @param {number[|number} indexes The indexes.
+     */
+
+    // Good
+    /**
+     ...
+     * @param {number|number[]} indexes The indexes.
+     */
+
+    // Good
+    /**
+     ...
+     * @param {...(number|number[])} indexes The indexes.
+     */
+
+    // Good
+    /**
+     ...
+     * @param {...(Array|Array[]|Function|Function[]|Object|Object[]|string|string[])} iteratees The iteratees to invoke.
+     */
+    ```
+
   1. Begin descriptions for functions that perform checks and return a `boolean` with "Checks if `firstArg` ...".
 
     ```js
