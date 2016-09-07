@@ -153,7 +153,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Separate the function description from the tags with a blank line.
+  1. Separate the function description from its tags with a blank line.
 
     ```js
     // Bad
@@ -367,7 +367,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If a parameter of return value can be a type or an array of that type, list the non-array type first.
+  1. If a parameter or return value can be of a type or an array of that type, list the non-array type first.
 
     ```js
     // Bad
@@ -472,7 +472,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. List all proprieties of an options object with `@param` tags, including their default values, if any.
+  1. List all options object proprieties with `@param` tags, including their default values, if any.
 
     ```js
     // Bad
@@ -496,7 +496,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Stylize the type of variadic arguments as `{...Type}`, use plural variable names, and surround variable names in brackets to indicate optionality.
+  1. Stylize the variadic argument types as `{...Type}`, with plural variable names, and surround the variable names in brackets to indicate optionality.
 
     ```js
     // Bad
