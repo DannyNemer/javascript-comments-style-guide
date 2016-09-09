@@ -623,7 +623,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If something prints in a `@example`, put an in-line comment within the example like #7, but say "Logs...".
+  1. If an operation in an `@example` prints, add an inline comment below the operation that starts with "=> Logs ...".
 
     ```js
     // Bad
