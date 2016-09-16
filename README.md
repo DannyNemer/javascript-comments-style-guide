@@ -214,7 +214,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Use lowercase for labels of primitive data types. In JavaScript, `'danny'` is not an instance of `String`, `true` is not an instance of `Boolean`, and `7` is not an instance of `Number`.
+  1. Use lowercase for primitive data type names. In JavaScript, `'danny'` is not an instance of `String`, `true` is not an instance of `Boolean`, and `7` is not an instance of `Number`.
 
     ```js
     // Bad
@@ -234,7 +234,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Use title case for labels of complex data types: `Object`, `Array`, and `Function`.
+  1. Use title case for complex data type names: `Object`, `Array`, and `Function`.
 
     ```js
     // Bad
