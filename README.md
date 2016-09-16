@@ -580,7 +580,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. Start an `@example` with a leading blank line.
+  1. Start `@example` blocks with a leading blank line.
 
     ```js
     // Bad
