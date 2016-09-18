@@ -560,7 +560,7 @@ The beginnings of a JavaScript comments style guide.
 
 #### `@example`
 
-  1. Position an `@example` as the last tag within the comment block.
+  1. Position `@example` blocks as the last tag within the comment block.
 
     ```js
     /**
@@ -601,7 +601,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. In an `@example` block, add an inline comment below the function that starts with "=>" and shows the example's output.
+  1. Below each exemplified operation in `@example` blocks, add an in-line comment that starts with "=>" followed by the operation's returned value.
 
     ```js
     // Bad
@@ -623,7 +623,7 @@ The beginnings of a JavaScript comments style guide.
      */
     ```
 
-  1. If an operation in an `@example` prints, add an inline comment below the operation that starts with "=> Logs ...".
+  1. If an operation in an `@example` prints, add an in-line comment below the operation that starts with "=> Logs ...".
 
     ```js
     // Bad
